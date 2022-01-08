@@ -16,10 +16,13 @@ terraform {
     }
   }
 
-  backend "local" {
-    path = "local_tf_state/terraform-main.tfstate"
+  backend "s3" {
+    bucket = "github-actions-askulkarni2-state"
+    key    = "proton-demo/terraform-main.tfstate"
+    region = "us-west-2"
   }
 }
+
 
 data "aws_region" "current" {}
 
