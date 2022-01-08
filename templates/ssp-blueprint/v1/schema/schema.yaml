@@ -19,8 +19,8 @@ schema:
         environment:
           type: string
           description: "Name for environment"
-          default: "preprod"
+          default: "dev"
         zone:
           type: string
           description: "Name for zone"
-          default: "dev"
+          default: "preprod"
