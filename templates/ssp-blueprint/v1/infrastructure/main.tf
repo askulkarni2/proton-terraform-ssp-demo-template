@@ -56,11 +56,10 @@ provider "helm" {
 }
 
 locals {
-  tenant      = "aws001"  # AWS account name or unique id for tenant
-  environment = "preprod" # Environment area eg., preprod or prod
-  zone        = "dev"     # Environment with in one sub_tenant or business unit
-
-  kubernetes_version = "1.21"
+  tenant      = var.environment.inputs.tenant
+  environment = var.environment.inputs.environment
+  zone        = var.environment.inputs.zone
+  kubernetes_version = var.environment.inputs.kubernetes_version
 
   vpc_cidr       = "10.0.0.0/16"
   vpc_name       = join("-", [local.tenant, local.environment, local.zone, "vpc"])
