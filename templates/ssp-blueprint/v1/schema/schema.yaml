@@ -11,7 +11,7 @@ schema:
         kubernetes_version:
           type: string
           description: "K8s version"
-          default: 1.21.0
+          default: "1.21"
         tenant:
           type: string
           description: "Name for tenant"
