@@ -24,3 +24,16 @@ schema:
           type: string
           description: "Name for zone"
           default: "preprod"
+        aws_load_balancer_controller:
+          type: boolean
+          description: "Enable AWS Load Balancer Controller Add-On"
+          default: true
+        cluster_autoscaler:
+          type: boolean
+          description: "Enable Cluster Autoscaler Add-On"
+          default: true
+        metrics_server:
+          type: boolean
+          description: "Enable Metrics Server Add-On"
+          default: true
+
