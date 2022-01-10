@@ -145,7 +145,14 @@ module "aws-eks-accelerator-for-terraform" {
       }
     },
   }
-
+  # Teams
+  platform_teams = {
+    admin-team-1 = {
+      users = [
+          "arn:aws:sts::130531697802:assumed-role/Admin/kuapoorv-Isengard",
+      ]
+    }
+  }
 }
 
 module "kubernetes-addons" {
