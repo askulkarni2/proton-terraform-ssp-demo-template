@@ -36,4 +36,15 @@ schema:
           type: boolean
           description: "Enable Metrics Server Add-On"
           default: true
-
+        argocd:
+          type: boolean
+          description: "Enable ArgoCD Add-On"
+          default: true
+        aws_for_fluentbit:
+          type: boolean
+          description: "Enable AWS for FluentBit Add-On"
+          default: true
+        cert_manager:
+          type: boolean
+          description: "Enable Cert Manager Add-On"
+          default: true
