@@ -48,3 +48,7 @@ schema:
           type: boolean
           description: "Enable Cert Manager Add-On"
           default: true
+        vpa:
+          type: boolean
+          description: "Enable VPA Add-On"
+          default: true
