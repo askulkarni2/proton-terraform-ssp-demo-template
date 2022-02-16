@@ -1,5 +1,5 @@
 infrastructure:
   templates:
-    - file: "*"
+    - file: "*.tf"
       rendering_engine: hcl
       template_language: terraform
